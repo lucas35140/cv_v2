@@ -1,0 +1,455 @@
+﻿/*Police d'écriture*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans); /*Général*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat); /*titre*/
+
+body, span {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+/*Header Nav*/
+
+.navbar {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+.navbar-inverse {
+    background-color: rgb(55,55,54);
+    border-color: rgb(33,33,32);
+}
+
+nav img {
+    height: 50px;
+    padding:2px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: rgb(0,159,227);
+    font-size: 1.4em;
+}
+
+.navbar-inverse .navbar-nav > li:hover > a {
+    color: rgb(18,161,154);
+    background-color: #272727;
+}
+
+.navbar .nav-lien-text {
+    padding-left: 20px;
+}
+/*Introduction*/
+#intro {
+    background-color: grey;
+    background: url("../img/fond1.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+    #intro h1 {
+        text-align: center;
+        padding-bottom: 25px;
+        font-size: 4.5em;
+        border-bottom: 3px solid white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.62);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #intro #Acc-sous-titre {
+        text-align: center;
+        font-size: 2.5em;
+        font-family: 'PT Sans', sans-serif;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+        #intro #Acc-sous-titre b {
+            font-weight: normal;
+            color: rgb(0,159,227);
+        }
+
+    #intro .acc-lien {
+        text-align: center;
+        font-size: 2.5em;
+        margin-right: 30px;
+        color: rgb(18,161,154);
+    }
+
+    #intro #twitter:hover {
+        color: #359DFA;
+    }
+
+    #intro #google:hover {
+        color: red;
+    }
+
+    #intro #link:hover {
+        color: #0D37EC;
+    }
+
+/*Profil*/
+
+#profil {
+    padding-bottom: 80px;
+    background: url("../img/fond2.png");
+    background-color: black;
+    color: white;
+}
+
+    #profil img {
+        background-color: white;
+        padding: 15px 15px 50px 15px;
+    }
+
+    #profil h3 {
+        font-size: 1.8em;
+    }
+
+    #profil p, #profil div {
+        font-size: 1.05em;
+    }
+
+    #profil b {
+        font-weight: normal;
+        color: rgb(0,159,227);
+    }
+
+    #profil p {
+        margin-top: 36px;
+    }
+
+.profil-act-all {
+    padding-bottom: 40px;
+}
+
+.profil-act {
+    margin-top: 42px;
+}
+
+    .profil-act i {
+        color: rgb(0,159,227);
+    }
+
+
+/*Skill*/
+#skill {
+    background: url("../img/fond3.png");
+    padding-bottom: 50px;
+}
+
+    #skill h2 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    #skill h3 {
+        margin: 0;
+        border: 1px solid #D6D6D6;
+        background-color: #EEEEEE;
+        border-left: 8px solid rgb(0,159,227);
+        padding: 5px;
+    }
+
+.skill-border {
+    padding: 5px;
+    padding-top: 20px;
+    border: 1px solid #D6D6D6;
+    background-color: #EEEEEE;
+    border-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/*couleur bar*/
+.progress {
+    background-color: #D9D9D9;
+}
+
+    .progress .bar1 {
+        background-color: rgb(18,161,154);
+    }
+
+    .progress .bar2 {
+        background-color: rgb(0,159,227);
+    }
+
+/*formation*/
+#parcour {
+    background: url("../img/fond2.png");
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+    #parcour h2 {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    #parcour .forma-descri {
+        border-bottom: 1px solid #3F3F3F;
+        padding: 5px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    #parcour .forma-lieu {
+        margin-top: 12px;
+    }
+
+    #parcour h4 {
+        color: rgb(18,161,154);
+        ;
+    }
+
+    #parcour p i {
+        color: rgb(0,159,227);
+    }
+
+/*Mes Créations*/
+#creation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../img/fond3.png");
+}
+
+    #creation h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+.creation-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.creation-text-all {
+    color: white;
+    position: absolute;
+    top: 81%; /*25%*/
+    transition-property: top;
+    transition-duration: 1s;
+    width:100%;
+
+}
+
+@media (max-width: 1200px) {
+    .creation-text-all {
+        top: 77%; /*25%*/
+        transition-property: top;
+        transition-duration: 1s;
+        width: 100%;
+    }
+}
+
+.creation-item:hover .creation-text-all {
+    top: 25%;
+    transition-property: top;
+    transition-duration: 1s;
+}
+
+.creation-item img {
+    transform: scale(1);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.creation-item:hover img {
+    transform: scale(1.5) rotate(10deg);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+
+
+.creation-nom {
+    display: inline-block;
+    background-color: rgb(0,159,227);
+    padding-right: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.creation-date {
+    display: inline-block;
+    background-color: rgb(18,161,154);
+    padding: 3px;
+    padding-right: 5px;
+    padding-left: 15px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.creation-descri {
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+    padding-bottom: 1000px;
+    border-top: 2px solid rgb(0,159,227);
+}
+/*Contact*/
+#contact {
+    background: url("../img/fond2.png");
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    #contact h2 {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #contact h4 {
+        margin: 0;
+    }
+
+    #contact h3 i {
+        color: rgb(18,161,154);
+    }
+
+    #contact h3 {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #393939;
+        background-color: #232323;
+        margin: 0;
+    }
+
+.contact-cont {
+    border: 1px solid #393939;
+    background-color: #232323;
+    border-top: none;
+    padding: 7px;
+    margin-bottom:5px;
+}
+
+    .contact-cont iframe {
+        margin-top: 20px;
+    }
+
+.contact-text {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+    .contact-text p {
+        margin: 0px;
+    }
+
+.contact-cont a {
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.contact-color1 {
+    color: rgb(0,159,227);
+}
+
+.contact-color2 {
+    color: rgb(18,161,154);
+}
+
+.cont2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Responssive*/
+@media (min-width: 768px) {
+    /*header*/
+    .navbar {
+        border-radius: 0;
+    }
+
+        .navbar .nav-lien-text {
+            display: none;
+        }
+
+    nav img {
+        margin-right: 10px;
+    }
+    /*intro*/
+    #intro {
+        padding-bottom: 407px;
+    }
+
+        #intro h1 {
+            margin-top: 345px;
+        }
+    /*Profil*/
+    #profil {
+        padding-top: 80px;
+    }
+
+        #profil img {
+            margin-left: 71px;
+        }
+}
+
+/*footer*/
+footer {
+    background-color: rgb(55,55,54);
+    color:white;
+}
+
+    footer img {
+        height: 50px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+
+    footer div {
+        text-align: center;
+    }
+.foot-text{
+    padding-top:20px;
+}
+.footer-menu{
+    display:inline-block;
+    color:rgb(0,159,227);
+    font-size:1.2em;
+    margin-right:15px;
+}
+.footer-menu:hover{
+    color:rgb(18,161,154);
+}
+@media(max-width: 990px) {
+    /*parcour*/
+    #parcour .forma-descri {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*intro*/
+    #intro {
+        padding-bottom: 105px;
+    }
+
+        #intro h1 {
+            margin-top: 145px;
+        }
+    /*Profil*/
+    #profil {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+        #profil img {
+            margin-left: 20px;
+        }
+}
