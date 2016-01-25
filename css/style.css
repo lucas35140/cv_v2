@@ -205,7 +205,7 @@ nav img {
 
     #parcour h4 {
         color: rgb(18,161,154);
-        ;
+        
     }
 
     #parcour p i {
@@ -225,6 +225,16 @@ nav img {
     }
 
 
+#creation .btn-primary {
+    color: #fff;
+    background-color: rgb(0,159,227);
+    border-color: #006F9E;
+    margin-top:15px;
+}
+#creation .btn-primary:hover{
+    background-color: #00425E;
+    border-color: #001A25;
+}
 .creation-item {
     position: relative;
     overflow: hidden;
@@ -416,6 +426,7 @@ footer {
     }
 .foot-text{
     padding-top:20px;
+    padding-bottom:20px;
 }
 .footer-menu{
     display:inline-block;
